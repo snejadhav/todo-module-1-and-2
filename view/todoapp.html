@@ -1,0 +1,79 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta charset="utf-8" >
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+      
+      <script type='text/javascript' language='javascript' src='script.js'/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<title>To Do Application</title>
+
+</head>
+<body>
+   
+  <!--creation of todo button-->
+    
+	 <div class="wrapper">
+      <button  type="button" class="btn btn-default btn-md" onclick="myFunction()">ToDo</button>
+    </div>
+       <div id="myDIV" class="header">
+          <h2 align="center" style="color: white">My To Do List</h2>
+              <input type="text" id="myInput" placeholder="Title...">
+              <div class="button1">
+                <button  type="button" class="btn btn-default btn-sm" onclick="newElement()" >ADD</button>
+              </div>
+       </div>
+       <div>
+       
+         <b style="color: white"><p style="font-size:50px" align="center" id="tim"></p></b>
+            <script type="text/javascript">
+               mytime();
+            </script>
+       </div>
+
+<b style="color: white"><p style="font-size:50px; color:"white" align="center" id="lblGreetings"></p></b>
+         <script type="text/javascript">
+              greet1();
+         </script>
+
+      <div id=focus>
+          <h2 style ="color: white" align="center" style = "font-weight:bolder;">"What is your main focus TODAY?"</h2>
+          </div>
+
+         <ul id="myUL">
+            <script type="text/javascript">
+             close1();
+      // Click on a close button to hide the current list item
+               var close = document.getElementsByClassName("close");
+                   var i;
+                    for (i = 0; i < close.length; i++)
+                    {
+                      close[i].onclick = function() 
+                      {
+                        var div = this.parentElement;
+                        div.style.display = "none";
+                      }
+                    }
+
+            </script>
+        </ul>
+<p id="count"></p>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
